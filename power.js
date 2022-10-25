@@ -8,4 +8,3 @@ function numberToPower(number, power){
   }
   return x}
 }
-console.log(numberToPower(10,0))
