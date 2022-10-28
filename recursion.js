@@ -1,9 +1,21 @@
-let count = 0;
-function sum(arr, n) {
-  if( n === 0){
-    return 0;
-  } else{
-   return sum(arr, n-1) + arr[n-1];
+// function countup(n) {
+//   if (n < 1) {
+//     return [];
+//   } else {
+//     const countArray = countup(n - 1);
+//     countArray.push(n);
+//     console.log(countArray)
+//     return countArray;
+//   }
+// }
+// console.log(countup(5));
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
+    return [];
+  } else {
+      const x = rangeOfNumbers(startNum, endNum-1);
+      x.push(endNum);
+      return x;
   }
 }
-console.log(sum([2,4,5,6],2))
+console.log(rangeOfNumbers(2,3))
