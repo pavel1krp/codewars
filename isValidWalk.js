@@ -1,5 +1,10 @@
 function isValidWalk(walk) {
-  console.log(walk)
-  return walk.length==10? true: false  
+  let w = walk.filter(el => el ==='w');
+  let n = walk.filter(el => el ==='n');
+  let e = walk.filter(el => el ==='e');
+  let s = walk.filter(el => el ==='s');
+  if(w.length === e.length && n.length === s.length &walk.length ===10){
+   return true
+  } return false
 }
-console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']))
+console.log(isValidWalk(['s','s','n','s','n','s','n','s','n','s']))
