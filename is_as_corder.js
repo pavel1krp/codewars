@@ -7,4 +7,3 @@ function inAscOrder(arr) {
     console.log(arr)
     return arr1 === arr
 }
-console.log(inAscOrder([1, 6, 10, 18, 2, 4, 20]))
