@@ -1,3 +1,1 @@
-function countSheeps(arrayOfSheep) {
-  return arrayOfSheep.reduce((el, reducer)=> el == true? reducer+ el: reducer+0 )
- }
+const countSheeps =(arrayOfSheep) => arrayOfSheep.filter(el=>el).length
