@@ -9,3 +9,4 @@ return answ.filter((el,i) => answ.indexOf(el) == i ).length > 1? false:true
 ;
 
 console.log(validWord( ['Star', 'Code', 'Wars'], 'StarCodeWar'))
+
