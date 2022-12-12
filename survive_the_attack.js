@@ -1,4 +1,5 @@
 function hasSurvived(attackers, defenders){
+  if(attackers.)
   let x = attackers.length/2
   for(let i = 0; i<attackers.length; i++){
     attackers[i] = defenders[i]-attackers[i]
