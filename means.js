@@ -3,7 +3,6 @@ function geo_mean(nums, arith_mean) {
   const y= [...nums, arith_mean].reduce((a,b) => a*b)
   // return x/ (nums.length+1)
   // return Math.round(Math.pow(y,(1/(nums.length+1))))
-
-  return 
+  return [x,y]
 }
 console.log(geo_mean([1, 3, 9, 27], 81))
