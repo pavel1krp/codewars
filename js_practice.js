@@ -11,3 +11,9 @@ const checkStart = (str, x)=>str.toUpperCase().startsWith(x.toUpperCase())
 
 const truncateString =(str, number)=>  str.slice(0,number) + '...'
 
+const getMinLengthWord = (str)=> {
+ str = str.split(' ').sort((a,b)=>a.length-b.length);
+ return str[0].trim() === ''? null: str[0]
+}
+
+console.log(getMinLengthWord("   "))
