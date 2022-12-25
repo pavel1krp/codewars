@@ -16,7 +16,5 @@ const getMinLengthWord = (str)=> {
  return str[0].trim() === ''? null: str[0]
 }
 
-const setUpperCase =(str) =>{
-  str.map(el=>el.toLowerCase())
-}
-console.log(setUpperCase('всем стУдентам инкуБатора Желаю удачИ!'))
+const setUpperCase =(str) =>str.split(' ').map(el=>el.toLowerCase()).map(el => el[0].toUpperCase()+(el.slice(1))).join(' ')
+
