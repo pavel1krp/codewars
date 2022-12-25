@@ -6,3 +6,8 @@ const repeatString = (str, number, div)=>{
   return answ
 }
 console.log(repeatString("yo", 3, ","))
+const repeatString2 = (str, number, div)=>{
+  return (str+div).repeat(number)
+  
+}
+console.log(repeatString2("yo", 3, " "))
