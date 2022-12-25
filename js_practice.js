@@ -5,11 +5,9 @@ const repeatString = (str, number, div)=>{
   }
   return answ
 }
-const repeatString2 = (str, number, div)=>{
-  return (str+div).repeat(number)
+const repeatString2 = (str, number, div)=> (str+div).repeat(number)
   
-}
-const checkStart = (str, x)=>{
-  return str.toUpperCase().startsWith(x.toUpperCase())
-}
-console.log(checkStart("Incubator", "inc"))
+const checkStart = (str, x)=>str.toUpperCase().startsWith(x.toUpperCase())
+
+const truncateString =(str, number)=>  str.slice(0,number) + '...'
+
