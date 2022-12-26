@@ -18,3 +18,9 @@ const getMinLengthWord = (str)=> {
 
 const setUpperCase =(str) =>str.split(' ').map(el=>el.toLowerCase()).map(el => el[0].toUpperCase()+(el.slice(1))).join(' ')
 
+const isIncludes = (strBig, strSmall)=>{
+  strBig = strBig.split('').sort().join('')
+  strSmall = strSmall.split('').sort().join('')
+  return strBig +" " + strSmall
+}
+console.log(isIncludes("Incubator", "cut"))
