@@ -6,5 +6,5 @@ function numberToPower(number, power){
   for(let i = 0; i<power-1; i++ ){
     x *= number;
   }
-  return x}
+  return x ; }
 }
