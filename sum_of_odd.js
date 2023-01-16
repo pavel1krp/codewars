@@ -1,8 +1,8 @@
 function rowSumOddNumbers(n) {
-  let x = 0;
-	for(let i = 1; i<= n; i+=2){
-    x+= i
+  let x = [];
+	for(let i = 1; i<= 1000000; i+=2){
+    
   }
   return x
 }
-console.log(rowSumOddNumbers(1))
+console.log(rowSumOddNumbers(2))
