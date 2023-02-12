@@ -10,4 +10,3 @@ if(a<b){
  }}
  return sum
 }
-console.log(getSum(-4,-2))
