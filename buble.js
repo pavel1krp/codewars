@@ -8,3 +8,10 @@ const buble = (arr)=>{
   }
   return arr
 }
+
+const str = ['a','b','2','W','w','C']
+
+function filt(){
+  return str.filter(el => el.toUpperCase() == el)
+}
+console.log(filt(str))
