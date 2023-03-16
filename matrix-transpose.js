@@ -1,9 +1,11 @@
 function transpose(matrix) {
   const newMatrix = []
-  for(let i = 0; i<matrix.length;i++){
-    for(let k = 0; k<matrix[i].length; k++){
-      newMatrix.push(matrix[i][k])
+  for(let i = 0; i<matrix[0].slice().length;i++){
+    let newArr =[]
+    for(let k = 0; k<matrix.slice().length; k++){
+      newArr.push(matrix[k][i])
     }
+    newMatrix.push(newArr)
   }
   return newMatrix
 }
