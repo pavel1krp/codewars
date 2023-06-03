@@ -1,0 +1,1 @@
+const noIfsNoButs =(a, b)=> `${a} ${['is smaller than', 'is equal to','is greater than'][Math.sign(a-b)+1]} ${b}`
