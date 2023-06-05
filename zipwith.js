@@ -6,7 +6,4 @@ function zipWith(fn,a0,a1) {
       x.push(fn(a0[i],a1[i]))
     }
     return x;
-  }
-console.log(zipWith(plus,[0,1,2,3,4,5], [6,5,4,3,2,1] ))
-
-console.log(Math.pow(10,3))
+ }
